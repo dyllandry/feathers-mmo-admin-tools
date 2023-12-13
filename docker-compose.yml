@@ -6,3 +6,11 @@ services:
       - './server:/home/node/app'
     ports:
       - 3030:3030
+  db:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+  adminer:
+    image: adminer
+    ports:
+      - 8080:8080
