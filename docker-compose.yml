@@ -1,0 +1,8 @@
+services:
+  server:
+    image: feathers-mmo-admin-tools-server
+    build: server
+    volumes:
+      - './server:/home/node/app'
+    ports:
+      - 3030:3030
