@@ -1,5 +1,5 @@
 {
-  "name": "feathers-mmo-admin-tools-client",
+  "name": "client",
   "private": true,
   "version": "0.0.0",
   "type": "module",
