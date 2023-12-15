@@ -1,9 +1,16 @@
 const Sequelize = require('sequelize');
 
 module.exports = function (app) {
-  const connectionString = app.get('mysql');
+  const dialect = app.get('database').dialect;
+  const username = app.get('database').username;
+  const password = app.get('database').password;
+  const host = app.get('database').host;
+  const port = app.get('database').port;
+  const name = app.get('database').name;
+  const connectionString = `${dialect}://${username}:${password}@${host}:${port}/${name}`;
+
   const sequelize = new Sequelize(connectionString, {
-    dialect: 'mysql',
+    dialect,
     logging: console.log,
     define: {
       freezeTableName: true
