@@ -1,4 +1,6 @@
 const Sequelize = require('sequelize');
+const dotenv = require('dotenv');
+dotenv.config();
 
 module.exports = function (app) {
   const dialect = app.get('database').dialect;

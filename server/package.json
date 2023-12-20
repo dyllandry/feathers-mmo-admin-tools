@@ -48,6 +48,7 @@
     "@feathersjs/transport-commons": "^5.0.8",
     "compression": "^1.7.4",
     "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
     "feathers-sequelize": "^6.4.0",
     "helmet": "^5.1.1",
     "mysql2": "^3.6.5",
@@ -57,8 +58,10 @@
   },
   "devDependencies": {
     "axios": "^1.6.2",
+    "dayjs": "^1.11.10",
     "eslint": "^8.47.0",
     "mocha": "^10.2.0",
-    "nodemon": "^2.0.22"
+    "nodemon": "^2.0.22",
+    "sequelize-cli": "^6.6.2"
   }
 }

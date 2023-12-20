@@ -30,10 +30,10 @@
   },
   "database": {
     "dialect": "mysql",
-    "username": "root",
-    "password": "password",
-    "host": "db",
-    "port": 3306,
-    "name": "feathers_mmo_admin_tools"
+    "username": "DATABASE_USERNAME",
+    "password": "DATABASE_PASSWORD",
+    "host": "DATABASE_HOST",
+    "port": "DATABASE_PORT",
+    "name": "DATABASE_NAME"
   }
 }

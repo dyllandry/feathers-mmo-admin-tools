@@ -1,0 +1,10 @@
+const path = require('path');
+const dotenv = require('dotenv');
+
+dotenv.config();
+const { DATABASE_HOST, DATABASE_PORT, DATABASE_NAME, DATABASE_USERNAME, DATABASE_PASSWORD } 
+  = process.env;
+
+module.exports = {
+  url: `mysql://${DATABASE_USERNAME}:${DATABASE_PASSWORD}@${DATABASE_HOST}:${DATABASE_PORT}/${DATABASE_NAME}`
+}
